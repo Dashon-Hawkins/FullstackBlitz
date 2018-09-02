@@ -1,0 +1,20 @@
+
+
+{
+  "name": "blitz-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/IMiraz/Blitz-redux.git",
+"engines":{
+"node":"8.11.1",
+"npm":"5.6.0"
+},
+"scripts":{
+"start": "node index.js"
+},
+  "author": "wasifmiraz <wasifmiraz@mail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
