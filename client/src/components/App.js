@@ -1,9 +1,10 @@
 import React from 'react';
 
 import {BrowserRouter, Route} from 'react-router-dom'
+import Header './Header'
 
 const App = () => {
-  const Header = () => <h2>Header</h2>
+
   const Survey = () =><h2>Survey</h2>
   const Landing = () =><h2>Landing</h2>
 
