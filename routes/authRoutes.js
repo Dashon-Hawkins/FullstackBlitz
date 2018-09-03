@@ -13,7 +13,7 @@ app.get('/api/current_user', (req, res) => {
 
 app.get('/api/logout', (req,res) => {
   req.logout();
-  res.send(res.user);
+  res.send(res.user)
 })
 
         app.get('/', (req, res) => {
