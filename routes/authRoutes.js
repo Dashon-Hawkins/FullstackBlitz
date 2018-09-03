@@ -7,7 +7,9 @@ module.exports = app => {
         scope:['profile','email']
         }));
         app.get('/auth/google/callback', passport.authenticate('google'));
-
+app.get('/api/current_user', (req, res) => {
+    res.send(req.user);
+});
         app.get('/', (req, res) => {
         res.send({ h1:'there'})
         });
