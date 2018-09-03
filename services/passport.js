@@ -5,6 +5,11 @@ const Keys = require('../config/keys.js');
 
 const User = mongoose.model('users');
 
+passport.serializerUser((user, done) => {
+    done(null, user.id);
+
+});
+
 passport.use(
     new GoogleStrategy({
 
