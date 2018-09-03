@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Keys = require('./config/keys');
-require('./services/passport.js');
 const authRouter = require('./routes/authRoutes.js');
+const User =require('./models/User');
+require('./services/passport.js');
 
 mongoose.connect(Keys.mongoURL);
 

@@ -1,4 +1,3 @@
-import { Mongoose } from 'mongoose';
 
 const mongoose = require('mongoose');
 
@@ -8,5 +7,5 @@ const userSchema= new Schema( {
 googleId:String
 });
 
-Mongoose.model('users', userSchema);
+mongoose.model('users', userSchema);
 
