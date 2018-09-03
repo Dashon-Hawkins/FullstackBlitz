@@ -8,11 +8,15 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "nodemon node index.js"
+    "start": "nodemon node index.js",
+    "blitz-redux": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run blitz-redux\" \"npm run client\""
   },
   "author": "wasifmiraz <wasifmiraz@mail.com>",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^4.0.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
     "mongoose": "^5.2.12",
