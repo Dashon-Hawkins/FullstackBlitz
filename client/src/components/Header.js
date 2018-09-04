@@ -5,11 +5,15 @@ class Header extends Component {
   renderContent() {
   switch(this.props.auth){
     case  null :
-    return 'i am still deciding';
+    return;
     case false:
-return 'im logout';
+return (
+<li><a href="/auth/google">Login With Google </a></li>
+);
 default:
-return 'i am loggedin';
+return(
+   <li><a href="">Logout</a></li>
+)
   }
 
   }
@@ -21,7 +25,7 @@ return 'i am loggedin';
             <div className="nav-wrapper">
               <a className="left brand-logo">Blitz</a>
               <ul className="right">
-                <li><a>{this.renderContent()}</a></li>
+                {this.renderContent()}
               </ul>
             </div>
           </nav>

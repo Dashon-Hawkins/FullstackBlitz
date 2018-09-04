@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter} from 'react-router-dom';
+import { BrowserRouter,Route} from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import Header from './Header';
+
+const Surveys = () =><h>dsfdaSurveys</h>
 
 class App extends Component {
   componentDidMount() {
@@ -16,6 +18,7 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
+            <Route exact path="/surveys" component={Surveys} />
 
           </div>
         </BrowserRouter>
