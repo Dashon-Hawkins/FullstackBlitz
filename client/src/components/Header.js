@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux';
 
 class Header extends Component {
 
     render() {
+      console.log(this.props);
          return(
             <nav>
             <div className="nav-wrapper">
@@ -16,6 +18,12 @@ class Header extends Component {
     }
 
 }
+function mapStateToProps(state) {
 
-export default Header
+   return {
+     auth:state.auth
+   }
+}
+
+export default connect(mapStateToProps)(Header);
 
