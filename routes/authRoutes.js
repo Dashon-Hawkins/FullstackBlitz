@@ -28,7 +28,7 @@ app.get('/api/current_user',
 app.get('/api/logout',
   (req,res) => {
   req.logout();
-  res.send(res.user)
+  res.redirect('/')
 })
 
         app.get('/',

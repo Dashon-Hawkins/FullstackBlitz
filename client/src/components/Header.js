@@ -12,7 +12,7 @@ return (
 );
 default:
 return(
-   <li><a href="">Logout</a></li>
+   <li><a href="/api/logout">Logout</a></li>
 )
   }
 
