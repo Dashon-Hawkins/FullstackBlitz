@@ -7,6 +7,7 @@ const Keys = require('./config/keys');
 const authRouter = require('./routes/authRoutes.js');
 const BillingRouter = require('./routes/billingRoute.js')
 const User =require('./models/User');
+const Survey = require('./models/Surveys');
 require('./services/passport.js');
 
 mongoose.connect(Keys.mongoURL);
