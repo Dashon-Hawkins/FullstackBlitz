@@ -4,11 +4,12 @@ const cookieSession= require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
 const Keys = require('./config/keys');
+require('./models/User');
+require('./models/Surveys');
 const authRouter = require('./routes/authRoutes.js');
 const BillingRouter = require('./routes/billingRoute.js');
 const surveyRoute = require('./routes/surveyRoute');
-const User =require('./models/User');
-const Survey = require('./models/Surveys');
+
 require('./services/passport.js');
 
 mongoose.connect(Keys.mongoURL);

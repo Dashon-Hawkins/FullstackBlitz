@@ -1,7 +1,7 @@
 
-const mongoose = require('mongoose';)
+const mongoose = require('mongoose');
 const RequireLogin = require('../middlewares/requireLogin');
-const RequireCredits= require('../middlewares/requireCredits')
+ const RequireCredits= require('../middlewares/requireCredits')
 
 const Survey = mongoose.model('surveys');
 
@@ -16,10 +16,7 @@ const survey = new Survey({
     recipients: recipients.split(',').map(email => ({ email: email.trim() })),
 _user:req.user.id,
 dateSent:Date.now()
-
-
-
-})
+});
 
     });
 
