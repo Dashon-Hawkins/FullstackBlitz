@@ -5,7 +5,8 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 const Keys = require('./config/keys');
 const authRouter = require('./routes/authRoutes.js');
-const BillingRouter = require('./routes/billingRoute.js')
+const BillingRouter = require('./routes/billingRoute.js');
+const surveyRoute = require('./routes/surveyRoute');
 const User =require('./models/User');
 const Survey = require('./models/Surveys');
 require('./services/passport.js');
@@ -31,6 +32,7 @@ app.use(passport.session());
 
 authRouter(app);
 BillingRouter(app);
+surveyRoute(app);
 
 if (process.env.NODE_ENV === 'production') {
     // Express will serve up production assets
