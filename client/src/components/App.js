@@ -6,8 +6,7 @@ import Dashboard from './Dashboard'
 
 import Header from './Header';
 import Landing from './landing'
-
-const SurveyNew = () =><h1>New Survey</h1>
+import SurveyNew from './Surveys/SurveyNew'
 
 
 class App extends Component {
