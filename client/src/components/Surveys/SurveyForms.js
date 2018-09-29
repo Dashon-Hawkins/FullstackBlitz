@@ -87,6 +87,20 @@ function validate(values) {
         errors.title = 'You must provide a tittle'
     }
 
+    if(!values.subject) {
+        errors.subject = 'You must provide a Subject'
+    }
+
+    if(!values.body) {
+        errors.body = 'You must provide a body'
+    }
+
+    if(!values.emails) {
+        errors.emails = 'You must provide a emails'
+    }
+
+
+
     return errors
 
 }
