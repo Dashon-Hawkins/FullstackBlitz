@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import React, {Component} from 'react';
-import {reduxForm, Field} from 'redux-form'
-import SurveyFields from './SurveyFields'
+import {reduxForm, Field} from 'redux-form';
+import SurveyFields from './SurveyFields';
+import ValidateEmails from '../../utils/validateEmails'
 
 import {Link} from 'react-router-dom'
 
@@ -70,7 +71,7 @@ to="/surveys" className="red btn-flat white-text">Cancel</Link>
               type="submit"
               className="teal btn-flat right white-text">Next
 
-<i className="material-icons right">done</i>
+<i className="material-icons right">arrow_forward</i>
               </button>
               </form>
 
@@ -83,6 +84,7 @@ to="/surveys" className="red btn-flat white-text">Cancel</Link>
 function validate(values) {
 
    const errors = {};
+   errors.emails=ValidateEmails(values.emails || '');
     if(!values.title) {
         errors.title = 'You must provide a tittle'
     }
@@ -98,6 +100,7 @@ function validate(values) {
     if(!values.emails) {
         errors.emails = 'You must provide a emails'
     }
+
 
 
 
