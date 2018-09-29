@@ -80,6 +80,19 @@ to="/surveys" className="red btn-flat white-text">Cancel</Link>
 
 }
 
+function validate(values) {
+
+   const errors = {};
+    if(!values.title) {
+        errors.title = 'You must provide a tittle'
+    }
+
+    return errors
+
+}
+
+
 export default reduxForm({
+validate:validate,
 form: 'surveyForm'
 }) (SurveyForms)
