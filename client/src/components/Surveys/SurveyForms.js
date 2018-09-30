@@ -3,22 +3,12 @@ import React, {Component} from 'react';
 import {reduxForm, Field} from 'redux-form';
 import SurveyFields from './SurveyFields';
 import ValidateEmails from '../../utils/validateEmails'
-
-import {Link} from 'react-router-dom'
-
-
-const FIELDS =
- [
-{label:'Survey Title', name:'title'},
-{label:'Subjct Line', name:'subject'},
-{label:'Email Body', name:'body'},
-{label:'Recipient List', name:'emails'},
- ]
-
+import {Link} from 'react-router-dom';
+import formFields from './formfields';
 class SurveyForms extends Component {
     renderFields() {
           //disturcuering fileds travacy
- return _.map(FIELDS, ({ label, name }) => {
+ return _.map(formFields, ({ label, name }) => {
 return <Field key={name} component ={SurveyFields} type="text" label={label} name={name}/>
 
 //generalway
