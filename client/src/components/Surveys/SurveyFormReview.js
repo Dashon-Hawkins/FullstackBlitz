@@ -27,8 +27,12 @@ const SurveyReview = ({ onCancel, formReviewValues}) =>
         <h1>Survey Form Review</h1>
         {reviewFields}
         <button className="yellow darken-3 btn-flat"
-        onClick={onCancel}
-        >Back </button>
+        onClick={onCancel}>
+
+<i className="material-icons left">arrow_back</i>
+
+
+        Back </button>
         </div>
     )
 

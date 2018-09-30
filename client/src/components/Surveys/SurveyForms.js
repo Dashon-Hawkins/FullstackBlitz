@@ -60,7 +60,6 @@ to="/surveys" className="red btn-flat white-text">Cancel</Link>
               <button
               type="submit"
               className="teal btn-flat right white-text">Next
-
 <i className="material-icons right">arrow_forward</i>
               </button>
               </form>
