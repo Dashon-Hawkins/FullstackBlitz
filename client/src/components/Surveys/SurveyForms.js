@@ -73,7 +73,7 @@ to="/surveys" className="red btn-flat white-text">Cancel</Link>
 function validate(values) {
 
    const errors = {};
-   errors.emails=ValidateEmails(values.emails || '');
+   errors.recipients=ValidateEmails(values.recipients || '');
     if(!values.title) {
         errors.title = 'You must provide a tittle'
     }
@@ -86,8 +86,8 @@ function validate(values) {
         errors.body = 'You must provide a body'
     }
 
-    if(!values.emails) {
-        errors.emails = 'You must provide a emails'
+    if(!values.recipients) {
+        errors.recipients = 'You must provide a emails'
     }
 
 
