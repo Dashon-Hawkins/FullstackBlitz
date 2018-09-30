@@ -1,21 +1,31 @@
+import _ from 'lodash';
 import React from 'react'
-
 import {connect} from 'react-redux'
-const SurveyReview = ({ onCancel, formReviewValue}) =>
+
+import formFields from './formfields'
+
+const SurveyReview = ({ onCancel, formReviewValues}) =>
 {
-    console.log(formReviewValue)
+    const reviewFields = _.map(formFields, fields => {
+
+         return (
+            <div>
+             <label>{fields.label}</label>
+               <div>
+                {formReviewValues[fields.name]}
+                </div>
+            </div>
+         )
+
+    })
+
+
+
+    // console.log(formReviewValue)
     return (
         <div>
         <h1>Survey Form Review</h1>
-        <label>title</label>
-         <div>{formReviewValue.title}</div>
-         <label>subject</label>
-         <div>{formReviewValue.subject}</div>
-         <label>body</label>
-         <div>{formReviewValue.body}</div>
-         <label>emails</label>
-         <div>{formReviewValue.emails}</div>
-
+        {reviewFields}
         <button className="yellow darken-3 btn-flat"
         onClick={onCancel}
         >Back </button>
@@ -28,7 +38,7 @@ function mapStateToProps(state) {
     // console.log(state)
     return {
 
-        formReviewValue:state.form.surveyForm.values
+        formReviewValues:state.form.surveyForm.values
 
     }
 
