@@ -1,7 +1,12 @@
 import React, {Component} from 'react'
-
+import {connect} from 'react-redux'
+import {fetchSurveys} from '../../actions'
 
 class SurveysList extends Component {
+
+    componentDidMount () {
+         this.props.fetchSurveys();
+    }
 
     render () {
          return (
@@ -11,11 +16,15 @@ class SurveysList extends Component {
          )
     }
 
+}
 
-
-
+function mapStateToProps (state)
+{
+    return {
+        surveyslist:state.fetchingSurveys
+    }
 
 }
 
 
-export default SurveysList
+export default connect(mapStateToProps, {fetchSurveys} ) (SurveysList)

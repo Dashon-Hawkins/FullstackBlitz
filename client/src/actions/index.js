@@ -25,7 +25,7 @@ dispatch({ type:FETCH_USER, payload:res.data});
 
 export const fetchSurveys = () => async dispatch =>
  {
-   const res = await axios.post('/api/surveyslist');
+   const res = await axios.get('/api/surveyslist');
    dispatch({ type:FETCH_SURVEYS, payload:res.data})
 }
 
