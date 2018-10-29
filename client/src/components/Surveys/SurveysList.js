@@ -3,7 +3,6 @@ import {connect} from 'react-redux'
 import {fetchSurveys} from '../../actions'
 
 class SurveysList extends Component {
-
     componentDidMount () {
          this.props.fetchSurveys();
     }
@@ -36,11 +35,7 @@ renderSurveys() {
 
 
     render () {
-         return (
-              <div>
-              {this.renderSurveys()}
-              </div>
-         )
+  return this.renderSurveys()
     }
 
 }
