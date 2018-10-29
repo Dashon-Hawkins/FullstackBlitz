@@ -26,7 +26,7 @@
 - `Using stripe billing system testmode`
 <img src="assets/card.png" width="800" height="400">
 
-- `email view `
+- `email view`
 <img src="assets/emilview.png" width="800" height="400">
 - `Mlab online based database desgin`
 <img src="assets/database.png" width="800" height="400">
@@ -41,7 +41,22 @@
 
 ## Following technologies are used
 
-
+ - `React`
+ - `Redux` 
+ - `Express`
+ - `mongoose`
+ - `Mlab database`
+ - `Nodemoon`
+ - `Redux-thunk`
+ - `ReduxForm`
+ - `Passport js`
+ - `Gooogle passport 0auth`
+ - `Body-parser`
+ - `NPM`
+ - `Stripe`
+ - `Sendgrid`
+ - `Cookie-session`
+ - `Concurrently`
   
  
      
