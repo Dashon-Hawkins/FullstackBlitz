@@ -1,4 +1,4 @@
-## Fullstack-Hoffyevents-react-redux
+## Fullstack-Blitz
 
 ## About
 
@@ -67,11 +67,9 @@
    
 
 ## Scripts
+for starting please make sure that you have config file othwise it's don't working 
+- `npm run run dev` Start server in production environment
 
-- `npm run clean` Deletes Build files of Server and Client
-- `npm run build` Builds Server and Client
-- `npm run start` Start server in production environment
-- `npm run development` Start server in development environment
 
 
                                                                                                                                                                                                                                                                                                                                                                      
