@@ -2,7 +2,7 @@
 
 ## About
 
- `this is  my learning based project done 90% work, I always wished I'd had a social network for event publishing to find other event publisher  to collaborate with. It's like Hoffyevent, except instead of dates it's for finding event location to city with and make tracks. View all users, view each user's profile and information,  see similar users in the sidebar. this is also can track users activity`
+ `this is  my learning based project done 90% work, I always wished I'd had a social network for event publishing to find other event publisher  to collaborate with. It's like Hoffyevent, except instead of dates it's for finding event location to city with and make tracks. View all users, view each user's profile and information,  see similar users in the sidebar. this is also can track users activity `
 
  
 
