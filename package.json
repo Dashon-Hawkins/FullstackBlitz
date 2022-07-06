@@ -23,7 +23,7 @@
     "express": "^4.16.3",
     "mongoose": "^5.2.12",
     "nodemon": "^1.18.4",
-    "passport": "^0.4.0",
+    "passport": "^0.6.0",
     "passport-google-oauth20": "^1.0.0",
     "redux-form": "^7.4.2",
     "sendgrid": "^5.2.3",
